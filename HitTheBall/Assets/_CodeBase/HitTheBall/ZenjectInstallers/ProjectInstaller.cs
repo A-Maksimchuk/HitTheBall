@@ -1,3 +1,4 @@
+using HitTheBall.SceneManagement;
 using Zenject;
 
 namespace HitTheBall.ZenjectInstallers
@@ -6,6 +7,7 @@ namespace HitTheBall.ZenjectInstallers
     {
         public override void InstallBindings()
         {
+            Container.Bind<SceneManager>().AsSingle();
         }
     }
 }
