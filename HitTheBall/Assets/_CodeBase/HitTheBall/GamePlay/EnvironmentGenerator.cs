@@ -19,7 +19,7 @@ public class EnvironmentGenerator : MonoBehaviour
         {
             var instance = Instantiate(backgroundPref, parent);
             instance.transform.position =
-                new Vector3(Random.Range(-xDistance, xDistance), Random.Range(-20, yDistance), zPosition);
+                new Vector3(Random.Range(-xDistance, xDistance), Random.Range(-20, yDistance), Random.Range(zPosition, 100));
             instance.transform.rotation = Random.rotation;
             instance.transform.localScale = Vector3.one*Random.Range(0, maxScale);
             if(i%100==0)
