@@ -25,5 +25,10 @@ namespace HitTheBall.GamePlay.HittableObjects
             _rigidbody.velocity = Vector3.zero;
             _rigidbody.AddForce(direction*power*hitPowerMultiplier);
         }
+
+        public Vector3 GetVelocity()
+        {
+            return _rigidbody.velocity;
+        }
     }
 }

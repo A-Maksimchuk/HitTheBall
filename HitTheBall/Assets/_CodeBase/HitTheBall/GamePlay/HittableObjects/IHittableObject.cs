@@ -6,5 +6,6 @@ namespace HitTheBall.GamePlay.HittableObjects
     {
         public Vector3 GetPosition();
         public void Hit(Vector3 direction, float power);
+        public Vector3 GetVelocity();
     }
 }
